@@ -22,7 +22,7 @@ class TransactionMonitorService : Service() {
         private const val TAG = "TransactionMonitor"
         private const val CHANNEL_ID = "transaction_monitor"
         private const val NOTIFICATION_ID = 1
-        private const val CHECK_INTERVAL_MS = 3000L
+        private const val CHECK_INTERVAL_MS = 1000L
         private const val MAX_CHECKS = 100 // ~5 minutes
     }
     
