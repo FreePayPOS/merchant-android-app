@@ -104,10 +104,10 @@ class NFCPaymentHandler(private val context: Context) {
                 0x04, // P1 (Select by AID)
                 0x00, // P2
                 0x07, // Lc (length of AID)
-                0xF0.toByte(), 0x43, 0x52, 0x59, 0x50, 0x54, 0x4F // "CRYPTO" in hex
+                0xF0.toByte(), 0x46, 0x52, 0x45, 0x45, 0x50, 0x41, 0x59 // "FREEPAY" in hex
             )
             
-            Log.d(TAG, "📤 Selecting FreePay AID: F043525950544F")
+            Log.d(TAG, "📤 Selecting FreePay AID: F046524545504159")
             var response = isoDep.transceive(selectFreepayAID)
             Log.d(TAG, "📥 Select response: ${response.toHex()}")
             
